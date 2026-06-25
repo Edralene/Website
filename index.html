@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bisqueria artisan bakery landing page" />
+  <title>Bisqueria — The Art of Baking</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="Bisqueria home">
+      <span class="brand-mark" aria-hidden="true">♨</span>
+      <span>Bisqueria</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Pages</a>
+      <a href="#menu">Our menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <label class="search-box">
+        <span class="sr-only">Search bakery items</span>
+        <input id="siteSearch" type="search" placeholder="Search items..." autocomplete="off" />
+        <span class="search-icon">⌕</span>
+      </label>
+      <button class="icon-button" aria-label="Open shopping bag">⌑</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero section-shell">
+      <h1>The Art Of Baking</h1>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Premium bread<br>and cookies<br>made from<br>scratch</p>
+          <a class="btn btn-yellow" href="#products"><span>•</span> View items</a>
+        </div>
+
+        <div class="hero-image card-image">
+          <img
+            src="assets/images/oatmeal-cookies.svg"
+            alt="Chocolate cookie ice cream sandwich"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section class="section-shell">
+      <div class="proof-panel">
+        <div class="proof-statement">
+          <h2>With enough butter,<br>anything is good.</h2>
+          <div class="mini-profile">
+            <div class="avatar avatar-1">B</div>
+            <span>Our master plan up<br><strong>200 year old</strong></span>
+            <a href="#about">What we are<br><u>dishing out?</u></a>
+          </div>
+        </div>
+
+        <div class="proof-score">
+          <div class="rating-line">
+            <strong>4.38</strong>
+            <div>
+              <span class="stars">★★★★★</span>
+              <span>Based on 4380 google reviews.</span>
+            </div>
+          </div>
+
+          <div class="category-pills">
+            <span>Breads <b>8</b></span>
+            <span>Cookies <b>20</b></span>
+            <span>Pretzel <b>8</b></span>
+            <span>Cake <b>3</b></span>
+            <span>Pastries <b>12</b></span>
+            <span>Croissant <b>15</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section-shell catalog-section" id="products">
+      <div class="section-heading product-heading">
+        <h2>List of our products</h2>
+        <div class="filter-pills" aria-label="Product filters">
+          <button class="selected" type="button" data-filter="new" aria-pressed="true">New products</button>
+          <button type="button" data-filter="best" aria-pressed="false">Best sellers</button>
+          <button type="button" data-filter="fresh" aria-pressed="false">Fresh bake</button>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="new best">
+          <img src="assets/images/oatmeal-cookies.svg" alt="Oatmeal raisin cookies">
+          <div class="product-content">
+            <h3>Oatmeal raisin cookies</h3>
+            <p><span class="stars">★★★★★</span> 146 reviews</p>
+            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 3.84 USD</span></a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="new fresh">
+          <img src="assets/images/soft-pretzel.svg" alt="Soft pretzel">
+          <div class="product-content">
+            <h3>Soft pretzels</h3>
+            <p><span class="stars">★★★★★</span> 235 reviews</p>
+            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 4.92 USD</span></a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="best fresh">
+          <img src="assets/images/baguette-bread.svg" alt="Soft baguette breads">
+          <div class="product-content">
+            <h3>Baguette soft breads</h3>
+            <p><span class="stars">★★★★★</span> 380 reviews</p>
+            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 14.96 USD</span></a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="new best">
+          <img src="assets/images/chocolate-cake.svg" alt="Chocolate hazelnut cake">
+          <div class="product-content">
+            <h3>Chocolate hazelnut cannoli</h3>
+            <p><span class="stars">★★★★★</span> 120 reviews</p>
+            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 6.78 USD</span></a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="best fresh">
+          <img src="assets/images/almond-croissant.svg" alt="Almond croissant">
+          <div class="product-content">
+            <h3>Almond croissant</h3>
+            <p><span class="stars">★★★★★</span> 436 reviews</p>
+            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 7.54 USD</span></a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="fresh">
+          <img src="assets/images/croissant-waffle.svg" alt="Croissant au beurre">
+          <div class="product-content">
+            <h3>Croissant au beurre</h3>
+            <p><span class="stars">★★★★★</span> 175 reviews</p>
+            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 9.48 USD</span></a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="new">
+          <img src="assets/images/chiffon-pie.svg" alt="Chiffon pie">
+          <div class="product-content">
+            <h3>Chiffon pie</h3>
+            <p><span class="stars">★★★★★</span> 110 reviews</p>
+            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 18.47 USD</span></a>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="best fresh">
+          <img src="assets/images/focaccia-bread.svg" alt="Focaccia bread">
+          <div class="product-content">
+            <h3>Focaccia genovese</h3>
+            <p><span class="stars">★★★★★</span> 092 reviews</p>
+            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 8.32 USD</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT / FEATURE -->
+    <section class="section-shell split-feature" id="about">
+      <div class="split-image">
+        <img src="assets/images/focaccia-bread.svg" alt="Freshly baked bread on a rack">
+      </div>
+
+      <div class="split-copy">
+        <h2>The haven of heavenly bakes,<br>cakes, and confections</h2>
+
+        <div class="benefit-list">
+          <div><span class="benefit-icon">✺</span><strong>Free shipping<br>worldwide</strong></div>
+          <div><span class="benefit-icon">♧</span><strong>Certified<br>organic</strong></div>
+          <div><span class="benefit-icon">▣</span><strong>Eco friendly<br>packaging</strong></div>
+        </div>
+
+        <p>Every batch is made with thoughtfully chosen ingredients, slow-fermented doughs, and a little extra joy. Fresh from our oven to your table.</p>
+        <a class="btn btn-yellow" href="#contact"><span>•</span> Contact us</a>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="ticker" aria-label="Bakery categories">
+      <div class="ticker-track">
+        <span>Cake</span><b>✳</b><span>Brown bread</span><b>✳</b><span>Croissants</span><b>✳</b><span>Cookie</span><b>✳</b>
+        <span>Cake</span><b>✳</b><span>Brown bread</span><b>✳</b><span>Croissants</span><b>✳</b><span>Cookie</span><b>✳</b>
+      </div>
+    </section>
+
+    <!-- DAILY ITEMS + TESTIMONIALS -->
+    <section class="section-shell daily-section" id="menu">
+      <div class="section-heading">
+        <h2>Daily boost bakery items</h2>
+        <div class="round-arrows" aria-label="Carousel arrows">
+          <button type="button" data-scroll="prev" aria-label="Previous products">←</button>
+          <button type="button" data-scroll="next" aria-label="Next products">→</button>
+        </div>
+      </div>
+
+      <div class="daily-row" id="dailyItems">
+        <article class="product-card compact">
+          <img src="assets/images/oatmeal-cookies.svg" alt="Oatmeal raisin cookies">
+          <div class="product-content"><h3>Oatmeal raisin cookies</h3><p><span class="stars">★★★★★</span> 146 reviews</p><a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 3.84 USD</span></a></div>
+        </article>
+        <article class="product-card compact">
+          <img src="assets/images/soft-pretzel.svg" alt="Soft pretzel">
+          <div class="product-content"><h3>Soft pretzels</h3><p><span class="stars">★★★★★</span> 235 reviews</p><a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 4.92 USD</span></a></div>
+        </article>
+        <article class="product-card compact">
+          <img src="assets/images/baguette-bread.svg" alt="Soft baguette breads">
+          <div class="product-content"><h3>Baguette soft breads</h3><p><span class="stars">★★★★★</span> 380 reviews</p><a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 14.96 USD</span></a></div>
+        </article>
+        <article class="product-card compact">
+          <img src="assets/images/chocolate-cake.svg" alt="Chocolate hazelnut cake">
+          <div class="product-content"><h3>Chocolate hazelnut cannoli</h3><p><span class="stars">★★★★★</span> 120 reviews</p><a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 6.78 USD</span></a></div>
+        </article>
+      </div>
+
+      <div class="testimonial-area">
+        <h2>What our fans say</h2>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>“ Whether it’s the warm bread, or just the cozy aroma that fills the air, this bakery is always brighter ”</p>
+            <img src="assets/images/customer-daniel.svg" alt="Customer testimonial portrait">
+            <h3>Daniel Armstrong <small>Physician & athlete</small></h3>
+          </article>
+          <article class="testimonial-card">
+            <p>“ The aroma hits you the moment you walk in. Every bite tastes like it was made just for me ”</p>
+            <img src="assets/images/customer-evelyn.svg" alt="Customer testimonial portrait">
+            <h3>Evelyn Hall <small>Diet instructor</small></h3>
+          </article>
+          <article class="testimonial-card">
+            <p>“ They’re open whenever my cravings hit, and the quality of food is always top notch ”</p>
+            <img src="assets/images/customer-james.svg" alt="Customer testimonial portrait">
+            <h3>James Robinson <small>NYT bestselling author</small></h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO MOSAIC -->
+    <section class="section-shell promo-section">
+      <h2>Why bakery’s items is so special to<br>our happy customer?</h2>
+      <div class="promo-mosaic">
+        <a href="#contact" class="promo-card promo-tall">
+          <img src="assets/images/baguette-bread.svg" alt="Fresh baked bread">
+          <div><span>Fresh <em>baked</em></span><small>Order now</small></div>
+        </a>
+
+        <a href="#contact" class="promo-card promo-main">
+          <img src="assets/images/almond-croissant.svg" alt="Croissants on a plate">
+          <div><span>Buy one get one</span><strong>Free</strong></div>
+        </a>
+
+        <div class="promo-right">
+          <a href="#contact" class="promo-card promo-small">
+            <img src="assets/images/croissant-waffle.svg" alt="Waffles and berries">
+          </a>
+          <a href="#contact" class="promo-card promo-wide">
+            <img src="assets/images/cookies-chocolate.svg" alt="Cookies and chocolate">
+            <div><strong>25% off</strong><span>Test the real<br>baked items.</span><small>Order now</small></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="service-panel">
+        <h2>Fresh, fast & always<br>here for you</h2>
+        <div><span>♨</span><p>Crafted with love &<br>quality products</p></div>
+        <div><span>▣</span><p>Free shipping on all<br>orders above $50</p></div>
+        <div><span>⌾</span><p>Freshly baked, every<br>single day</p></div>
+      </div>
+    </section>
+
+    <!-- LOGOS -->
+    <section class="logos section-shell">
+      <p>Partnering with top<br>tier bakery stores</p>
+      <span>◐ Logoipsum</span>
+      <span>✿ Logoipsum</span>
+      <span>◓ Logoipsum</span>
+      <span>ϟ Logoipsum</span>
+      <span>⬡ Logoipsum</span>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-inner section-shell">
+      <div class="newsletter">
+        <h2>Sunshine in your inbox</h2>
+        <p>Get 25% off your starter kit when you sign up</p>
+        <form class="email-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your mail" aria-label="Email address">
+          <button aria-label="Subscribe">→</button>
+        </form>
+        <p id="newsletterMessage" class="form-message" aria-live="polite"></p>
+        <small>You can unsubscribe by using the unsubscribe link. Our Privacy Policy applies and sets out your rights.</small>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact us</h3>
+        <p>info@example.com</p>
+        <strong>+0123-456-9870</strong>
+        <p>27th Street, 15th Floor, New York, NY 1010</p>
+        <a href="#">Get directions</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Useful link</h3>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#menu">Blog</a>
+        <a href="#products">Search results</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Our utilities</h3>
+        <a href="#">Style guide</a>
+        <a href="#">Changelog</a>
+        <a href="#">Licenses</a>
+        <a href="#">Protected page</a>
+        <a href="#">404</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+# Bisqueria Bakery Website
+
+## Files included
+- `index.html` — main webpage
+- `styles.css` — all responsive styling
+- `script.js` — product tabs, item search, slider controls, order toast, newsletter validation
+- `assets/images/` — local SVG bakery and customer image assets used by the website
+- `assets/reference/` — the uploaded visual references
+
+## How to use
+Open `index.html` in your browser. No internet connection is needed for the website images or JavaScript.
+
+To edit the content, change the text in `index.html`, the design in `styles.css`, and interactions in `script.js`.
+
+(() => {
+  const catalogCards = [...document.querySelectorAll('.catalog-section .product-card')];
+  const filterButtons = [...document.querySelectorAll('.filter-pills [data-filter]')];
+  const searchInput = document.querySelector('#siteSearch');
+  let activeFilter = 'new';
+
+  const applyFilters = () => {
+    const query = (searchInput?.value || '').trim().toLowerCase();
+    catalogCards.forEach((card) => {
+      const categories = (card.dataset.category || '').split(' ');
+      const matchesFilter = categories.includes(activeFilter);
+      const matchesSearch = !query || card.textContent.toLowerCase().includes(query);
+      card.classList.toggle('is-hidden', !(matchesFilter && matchesSearch));
+    });
+  };
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      activeFilter = button.dataset.filter;
+      filterButtons.forEach((item) => {
+        const isSelected = item === button;
+        item.classList.toggle('selected', isSelected);
+        item.setAttribute('aria-pressed', String(isSelected));
+      });
+      applyFilters();
+    });
+  });
+
+  searchInput?.addEventListener('input', applyFilters);
+  applyFilters();
+
+  const dailyItems = document.querySelector('#dailyItems');
+  document.querySelectorAll('[data-scroll]').forEach((button) => {
+    button.addEventListener('click', () => {
+      if (!dailyItems) return;
+      const direction = button.dataset.scroll === 'next' ? 1 : -1;
+      dailyItems.scrollBy({ left: direction * Math.min(360, dailyItems.clientWidth * .85), behavior: 'smooth' });
+    });
+  });
+
+  const newsletter = document.querySelector('#newsletterForm');
+  const newsletterMessage = document.querySelector('#newsletterMessage');
+  newsletter?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const email = newsletter.querySelector('input[type="email"]');
+    if (!email.value || !email.checkValidity()) {
+      newsletterMessage.textContent = 'Please enter a valid email address.';
+      email.focus();
+      return;
+    }
+    newsletterMessage.textContent = 'Thank you! Your 25% welcome offer is on its way.';
+    newsletter.reset();
+  });
+
+  const toast = document.createElement('div');
+  toast.className = 'toast-message';
+  toast.setAttribute('role', 'status');
+  document.body.appendChild(toast);
+  let toastTimer;
+  const showToast = (message) => {
+    toast.textContent = message;
+    toast.classList.add('show');
+    window.clearTimeout(toastTimer);
+    toastTimer = window.setTimeout(() => toast.classList.remove('show'), 2600);
+  };
+
+  document.querySelectorAll('[data-order]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const name = link.closest('.product-card')?.querySelector('h3')?.textContent.trim() || 'this item';
+      showToast(`${name} was added to your order list.`);
+    });
+  });
+})();
+
+:root {
+  --ink: #24100d;
+  --cream: #fffdf8;
+  --panel: #f5eee6;
+  --panel-2: #efe5d8;
+  --yellow: #ffc91b;
+  --line: rgba(36, 16, 13, .12);
+  --muted: #71645f;
+  --radius-xl: 30px;
+  --radius-lg: 23px;
+  --shell: min(1240px, calc(100% - 48px));
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  line-height: 1.4;
+}
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img { display: block; width: 100%; object-fit: cover; }
+.section-shell { width: var(--shell); margin-inline: auto; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+
+.site-header {
+  width: var(--shell);
+  min-height: 78px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(170px, 1fr) auto minmax(220px, 1fr);
+  align-items: center;
+  gap: 25px;
+}
+.brand {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -.055em;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  color: #24100d;
+  border-radius: 8px 8px 11px 11px;
+  background: var(--yellow);
+  font-size: 17px;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.main-nav a { position: relative; padding: 8px 0; }
+.main-nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 3px;
+  height: 3px;
+  background: var(--ink);
+  border-radius: 50%;
+}
+.header-actions { justify-self: end; display: flex; align-items: center; gap: 15px; }
+.search-box {
+  display: flex;
+  align-items: center;
+  min-width: 190px;
+  height: 39px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 0 13px;
+}
+.search-box input { width: 100%; border: 0; outline: 0; background: transparent; font-size: 12px; }
+.search-icon { font-size: 25px; transform: rotate(-15deg); }
+.icon-button { border: 0; background: transparent; font-size: 28px; }
+
+.hero { padding-top: 18px; }
+.hero h1 {
+  margin: 0;
+  max-width: 980px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: clamp(56px, 9vw, 138px);
+  font-weight: 800;
+  line-height: .96;
+  letter-spacing: -.085em;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  align-items: center;
+  gap: clamp(35px, 6vw, 100px);
+  margin-top: 42px;
+}
+.hero-copy { padding-left: 2px; }
+.eyebrow {
+  margin: 0 0 28px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: clamp(32px, 3.35vw, 52px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -.062em;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border-radius: 999px;
+  padding: 14px 19px;
+  font-size: 14px;
+  font-weight: 800;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 9px 14px rgba(36,16,13,.10); }
+.btn-yellow { background: var(--yellow); }
+.hero-image { height: 392px; border-radius: var(--radius-xl); overflow: hidden; }
+.hero-image img { height: 100%; }
+
+.proof-panel {
+  display: grid;
+  grid-template-columns: .9fr 1.25fr;
+  margin-top: 72px;
+  padding: 33px 40px;
+  background: var(--panel);
+  border-radius: var(--radius-xl);
+}
+.proof-statement {
+  padding-right: 34px;
+  border-right: 1px solid var(--line);
+}
+.proof-statement h2,
+.split-copy h2,
+.section-heading h2,
+.testimonial-area h2,
+.promo-section > h2,
+.service-panel h2,
+.newsletter h2 {
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -.055em;
+}
+.proof-statement h2 { font-size: clamp(26px, 3vw, 42px); }
+.mini-profile {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  margin-top: 37px;
+  font-size: 12px;
+  line-height: 1.35;
+}
+.mini-profile a { margin-left: auto; font-weight: 700; }
+.avatar { width: 39px; height: 39px; display: grid; place-items: center; border-radius: 50%; font-weight: 800; color: #fff; background: #9f5537; }
+.proof-score { padding-left: 34px; align-self: center; }
+.rating-line { display: flex; gap: 12px; align-items: center; }
+.rating-line > strong { font-size: 30px; }
+.rating-line > div { display: grid; font-size: 12px; font-weight: 700; }
+.stars { color: #f3a508; letter-spacing: 1px; }
+.category-pills { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 24px; }
+.category-pills span, .filter-pills button {
+  border: 0;
+  padding: 12px 16px;
+  background: #fffdfa;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 3px 8px rgba(36,16,13,.045);
+}
+.category-pills b { margin-left: 18px; }
+
+.catalog-section { padding-top: 72px; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 26px; }
+.section-heading h2 { font-size: clamp(31px, 3vw, 44px); }
+.filter-pills { display: flex; gap: 9px; flex-wrap: wrap; justify-content: flex-end; }
+.filter-pills button { padding: 11px 17px; color: var(--ink); background: var(--panel); }
+.filter-pills button.selected { background: var(--yellow); }
+.product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+.product-card {
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid rgba(36,16,13,.04);
+  border-radius: var(--radius-lg);
+  background: var(--panel);
+  box-shadow: 0 9px 18px rgba(36,16,13,.035);
+}
+.product-card > img { aspect-ratio: 1.12 / 1; border-radius: 15px; }
+.product-content { padding: 13px 4px 0; }
+.product-content h3 { margin: 0; font-size: 14px; letter-spacing: -.02em; }
+.product-content p { margin: 5px 0 11px; color: var(--muted); font-size: 12px; }
+.order-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 12px;
+  border-radius: 999px;
+  background: #fffefa;
+  font-size: 12px;
+  font-weight: 700;
+}
+.order-row b { font-size: 15px; }
+.order-row span { margin-left: auto; color: var(--muted); font-weight: 600; white-space: nowrap; }
+
+.split-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(38px, 6vw, 95px);
+  align-items: center;
+  padding-top: 110px;
+}
+.split-image { overflow: hidden; height: 460px; border-radius: var(--radius-xl); }
+.split-image img { height: 100%; }
+.split-copy h2 { font-size: clamp(34px, 4.2vw, 56px); }
+.benefit-list { display: flex; gap: 33px; margin: 38px 0 30px; }
+.benefit-list > div { display: grid; gap: 8px; font-size: 13px; }
+.benefit-icon { font-size: 36px; line-height: 1; }
+.split-copy p { max-width: 580px; margin: 0 0 27px; color: var(--muted); font-size: 15px; }
+
+.ticker {
+  overflow: hidden;
+  margin-top: 86px;
+  padding: 24px 0;
+  background: linear-gradient(180deg, #fffcee 0%, #fff070 90%, #fffcea 100%);
+}
+.ticker-track { display: flex; width: max-content; gap: 42px; align-items: center; animation: scroll 28s linear infinite; white-space: nowrap; }
+.ticker span { font-family: "Trebuchet MS", Arial, sans-serif; font-size: 35px; font-weight: 800; letter-spacing: -.055em; }
+.ticker b { font-size: 34px; }
+@keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.daily-section { padding-top: 72px; }
+.round-arrows { display: flex; gap: 8px; }
+.round-arrows button {
+  width: 37px; height: 37px;
+  border: 0; border-radius: 50%;
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 18px;
+}
+.daily-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+.compact { background: #f3eee8; }
+.testimonial-area { padding-top: 80px; }
+.testimonial-area h2 { margin-bottom: 26px; text-align: center; font-size: clamp(31px, 3vw, 46px); }
+.testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.testimonial-card { padding: 28px; border-radius: var(--radius-xl); background: var(--panel); }
+.testimonial-card p { min-height: 75px; margin: 0 0 22px; font-size: 14px; font-style: italic; font-weight: 600; line-height: 1.46; }
+.testimonial-card img { aspect-ratio: 1.2 / 1; border-radius: 13px; }
+.testimonial-card h3 { margin: 14px 0 0; text-align: center; font-size: 13px; }
+.testimonial-card small { color: var(--muted); font-size: 12px; font-weight: 500; }
+
+.promo-section { padding-top: 105px; }
+.promo-section > h2 { margin-bottom: 35px; text-align: center; font-size: clamp(32px, 4.1vw, 56px); }
+.promo-mosaic {
+  display: grid;
+  grid-template-columns: .66fr 1.09fr .78fr;
+  gap: 28px;
+  align-items: center;
+}
+.promo-right { display: grid; gap: 28px; }
+.promo-card { position: relative; overflow: hidden; border-radius: var(--radius-xl); background: #3d2118; color: #fff; }
+.promo-card img { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .91; }
+.promo-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,7,3,.12), rgba(18,7,3,.56)); }
+.promo-card > div { position: absolute; z-index: 1; left: 27px; right: 27px; top: 28px; display: grid; gap: 7px; color: #fff; font-family: "Trebuchet MS", Arial, sans-serif; font-weight: 800; }
+.promo-card small { font-family: "DM Sans", sans-serif; font-weight: 600; }
+.promo-tall { height: 380px; }
+.promo-tall > div { font-size: 30px; }
+.promo-tall em { color: var(--yellow); font-style: normal; }
+.promo-main { height: 470px; }
+.promo-main > div { justify-items: center; text-align: center; font-size: 29px; }
+.promo-main strong { color: var(--yellow); font-size: clamp(70px, 9vw, 125px); line-height: .9; -webkit-text-stroke: 1px var(--yellow); color: transparent; }
+.promo-small { height: 150px; }
+.promo-wide { height: 260px; }
+.promo-wide > div { top: 36px; font-size: 27px; }
+.promo-wide strong { color: var(--yellow); font-size: 46px; }
+.promo-wide span { font-size: 25px; line-height: 1.08; }
+
+.service-panel {
+  display: grid;
+  grid-template-columns: 1.35fr repeat(3, 1fr);
+  gap: 32px;
+  align-items: center;
+  margin-top: 84px;
+  padding: 36px 42px;
+  border-radius: var(--radius-xl);
+  background: var(--panel);
+}
+.service-panel h2 { font-size: clamp(26px, 3vw, 42px); }
+.service-panel > div { display: flex; gap: 13px; align-items: center; }
+.service-panel span { font-size: 34px; }
+.service-panel p { margin: 0; font-size: 13px; font-weight: 600; }
+
+.logos {
+  display: flex;
+  gap: clamp(26px, 4vw, 70px);
+  align-items: center;
+  padding: 70px 0 60px;
+  overflow: hidden;
+}
+.logos p { min-width: 135px; margin: 0; font-size: 13px; font-weight: 700; }
+.logos span { min-width: max-content; color: #484340; font-size: 23px; font-weight: 700; letter-spacing: -.04em; }
+
+footer { background: var(--panel-2); }
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.55fr 1.02fr .65fr .75fr;
+  gap: 42px;
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+.newsletter h2 { font-size: 31px; }
+.newsletter > p { margin: 8px 0 20px; font-size: 14px; }
+.email-form { display: flex; max-width: 370px; height: 44px; overflow: hidden; border: 1px solid var(--line); border-radius: 99px; }
+.email-form input { flex: 1; min-width: 0; padding: 0 15px; border: 0; outline: 0; background: transparent; font-size: 13px; }
+.email-form button { width: 46px; margin: 4px; border: 0; border-radius: 50%; background: var(--yellow); font-size: 18px; }
+.newsletter small { display: block; max-width: 420px; margin-top: 13px; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.footer-col { display: grid; align-content: start; gap: 8px; font-size: 13px; }
+.footer-col h3 { margin: 3px 0 6px; font-size: 13px; }
+.footer-col p { margin: 0; color: var(--muted); line-height: 1.48; }
+.footer-col strong { margin: 6px 0; font-size: 24px; letter-spacing: .015em; }
+.footer-col a { text-decoration: none; }
+.footer-col a:hover { text-decoration: underline; }
+
+@media (max-width: 1000px) {
+  .site-header { grid-template-columns: 1fr auto; }
+  .main-nav { display: none; }
+  .product-grid { grid-template-columns: repeat(3, 1fr); }
+  .daily-row { grid-template-columns: repeat(2, 1fr); }
+  .footer-inner { grid-template-columns: 1.3fr 1fr 1fr; }
+  .footer-col:last-child { display: none; }
+}
+
+@media (max-width: 720px) {
+  :root { --shell: min(100% - 32px, 1240px); }
+  .site-header { min-height: 65px; gap: 12px; }
+  .brand { font-size: 20px; }
+  .search-box { display: none; }
+  .icon-button { font-size: 24px; }
+  .hero { padding-top: 14px; }
+  .hero h1 { font-size: clamp(50px, 14vw, 80px); }
+  .hero-grid { grid-template-columns: 1fr; margin-top: 27px; }
+  .hero-image { height: 300px; order: -1; }
+  .eyebrow { font-size: 37px; }
+  .proof-panel { grid-template-columns: 1fr; margin-top: 52px; padding: 29px 23px; }
+  .proof-statement { padding: 0 0 26px; border: 0; border-bottom: 1px solid var(--line); }
+  .proof-score { padding: 26px 0 0; }
+  .mini-profile { margin-top: 25px; }
+  .product-heading { align-items: flex-start; flex-direction: column; }
+  .filter-pills { justify-content: flex-start; }
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 13px; }
+  .product-card { padding: 7px; border-radius: 17px; }
+  .product-content { padding: 10px 3px 0; }
+  .product-content h3 { min-height: 32px; font-size: 12px; }
+  .product-content p { font-size: 10px; }
+  .order-row { gap: 6px; padding: 9px 8px; font-size: 10px; }
+  .split-feature { grid-template-columns: 1fr; padding-top: 75px; }
+  .split-image { height: 350px; }
+  .benefit-list { gap: 16px; margin: 27px 0; }
+  .benefit-list > div { font-size: 10px; }
+  .benefit-icon { font-size: 28px; }
+  .ticker { margin-top: 65px; }
+  .ticker span { font-size: 28px; }
+  .daily-row { display: flex; overflow-x: auto; padding-bottom: 7px; scroll-snap-type: x mandatory; }
+  .daily-row .product-card { min-width: 225px; scroll-snap-align: start; }
+  .testimonial-grid { display: flex; overflow-x: auto; padding-bottom: 7px; scroll-snap-type: x mandatory; }
+  .testimonial-card { min-width: 280px; scroll-snap-align: start; }
+  .promo-section { padding-top: 76px; }
+  .promo-mosaic { grid-template-columns: 1fr; gap: 16px; }
+  .promo-tall { height: 310px; }
+  .promo-main { height: 380px; }
+  .promo-right { gap: 16px; grid-template-columns: 1fr 1.35fr; }
+  .promo-small { height: 195px; }
+  .promo-wide { height: 195px; }
+  .promo-wide > div { top: 24px; left: 18px; right: 18px; font-size: 19px; }
+  .promo-wide strong { font-size: 35px; }
+  .promo-wide span { font-size: 17px; }
+  .service-panel { grid-template-columns: 1fr; gap: 23px; padding: 31px 25px; margin-top: 52px; }
+  .logos { gap: 30px; padding: 55px 0 45px; overflow-x: auto; }
+  .logos span { font-size: 18px; }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 35px 20px; padding-top: 42px; padding-bottom: 43px; }
+  .newsletter { grid-column: 1 / -1; }
+  .footer-col strong { font-size: 18px; }
+}
+
+@media (max-width: 390px) {
+  .product-grid { grid-template-columns: 1fr; }
+  .product-card > img { aspect-ratio: 1.6 / 1; }
+  .promo-right { grid-template-columns: 1fr; }
+  .promo-small, .promo-wide { height: 185px; }
+  .footer-inner { grid-template-columns: 1fr; }
+}
+
+
+/* JavaScript states */
+.product-card.is-hidden { display: none; }
+.form-message { min-height: 18px; margin: 10px 0 0; color: #6f5526; font-size: 12px; font-weight: 700; }
+.toast-message {
+  position: fixed; z-index: 99; right: 22px; bottom: 22px; max-width: 290px;
+  padding: 14px 18px; border-radius: 15px; background: var(--ink); color: #fffdf8;
+  box-shadow: 0 12px 36px rgba(36, 16, 13, .24); font-size: 13px; font-weight: 700;
+  opacity: 0; transform: translateY(14px); pointer-events: none; transition: .24s ease;
+}
+.toast-message.show { opacity: 1; transform: translateY(0); }
+@media (max-width: 720px) { .toast-message { left: 16px; right: 16px; bottom: 16px; max-width: none; } }
