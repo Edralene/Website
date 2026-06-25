@@ -3,336 +3,338 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bisqueria artisan bakery landing page" />
-  <title>Bisqueria — The Art of Baking</title>
+  <meta name="description" content="Bounty Fresh product and meal ideas website demo" />
+  <title>Bounty Fresh — Basta Baon, Bounty Fresh</title>
 
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=bf1" />
+  <script src="script.js?v=bf1" defer></script>
 </head>
-<body>
+<body class="bounty-fresh-site">
   <header class="site-header">
-    <a href="#home" class="brand" aria-label="Bisqueria home">
-      <span class="brand-mark" aria-hidden="true">♨</span>
-      <span>Bisqueria</span>
+    <a href="#home" class="brand" aria-label="Bounty Fresh home">
+      <span class="brand-mark" aria-hidden="true">BF</span>
+      <span>BOUNTY <b>FRESH</b></span>
     </a>
 
     <nav class="main-nav" aria-label="Main navigation">
       <a class="active" href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Pages</a>
-      <a href="#menu">Our menu</a>
+      <a href="#about">About us</a>
+      <a href="#products">Products</a>
+      <a href="#menu">Meal ideas</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <div class="header-actions">
       <label class="search-box">
-        <span class="sr-only">Search bakery items</span>
-        <input id="siteSearch" type="search" placeholder="Search items..." autocomplete="off" />
+        <span class="sr-only">Search Bounty Fresh products</span>
+        <input id="siteSearch" type="search" placeholder="Search products..." autocomplete="off" />
         <span class="search-icon">⌕</span>
       </label>
-      <button class="icon-button" aria-label="Open shopping bag">⌑</button>
+      <button class="icon-button" aria-label="Open product list">⌑</button>
     </div>
   </header>
 
   <main id="home">
-    <!-- HERO -->
     <section class="hero section-shell">
-      <h1>The Art Of Baking</h1>
+      <p class="hero-kicker">FRESH CHOICES FOR EVERYDAY MEALS</p>
+      <h1>Basta Baon,<br><span>Bounty Fresh!</span></h1>
 
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Premium bread<br>and cookies<br>made from<br>scratch</p>
-          <a class="btn btn-yellow" href="#products"><span>•</span> View items</a>
+          <p class="eyebrow">Fresh chicken<br>choices for every<br>family meal.</p>
+          <p class="hero-description">From everyday ulam to easy baon favorites, find the chicken cuts that fit your menu.</p>
+          <a class="btn btn-yellow" href="#products"><span>•</span> Explore products</a>
         </div>
 
         <div class="hero-image card-image">
-          <img
-            src="assets/images/hero-cookie-sandwich.svg"
-            alt="Chocolate cookie ice cream sandwich"
-          />
+          <img src="assets/images/bf-hero.svg" alt="Bounty Fresh chicken product pack illustration" />
         </div>
       </div>
     </section>
 
-    <!-- SOCIAL PROOF -->
     <section class="section-shell">
-      <div class="proof-panel">
+      <div class="proof-panel bounty-proof">
         <div class="proof-statement">
-          <h2>With enough butter,<br>anything is good.</h2>
+          <h2>Masarap ang baon,<br>mas happy ang pamilya.</h2>
           <div class="mini-profile">
-            <div class="avatar avatar-1">B</div>
-            <span>Our master plan up<br><strong>200 year old</strong></span>
-            <a href="#about">What we are<br><u>dishing out?</u></a>
+            <div class="avatar avatar-1">BF</div>
+            <span>Made for everyday<br><strong>family meals</strong></span>
+            <a href="#about">Discover our<br><u>meal ideas</u></a>
           </div>
         </div>
 
         <div class="proof-score">
           <div class="rating-line">
-            <strong>4.38</strong>
+            <strong>Ready for</strong>
             <div>
               <span class="stars">★★★★★</span>
-              <span>Based on 4380 google reviews.</span>
+              <span>quick meals, sharing meals, and baon.</span>
             </div>
           </div>
 
           <div class="category-pills">
-            <span>Breads <b>8</b></span>
-            <span>Cookies <b>20</b></span>
-            <span>Pretzel <b>8</b></span>
-            <span>Cake <b>3</b></span>
-            <span>Pastries <b>12</b></span>
-            <span>Croissant <b>15</b></span>
+            <span>Whole Chicken</span>
+            <span>Cut-Ups</span>
+            <span>Breast Fillet</span>
+            <span>Adobo Cuts</span>
+            <span>Chicken Wings</span>
+            <span>Baon Faves</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PRODUCTS -->
     <section class="section-shell catalog-section" id="products">
       <div class="section-heading product-heading">
-        <h2>List of our products</h2>
+        <div>
+          <p class="section-kicker">FIND YOUR FAMILY FAVORITE</p>
+          <h2>Our Bounty Fresh products</h2>
+        </div>
         <div class="filter-pills" aria-label="Product filters">
-          <button class="selected" type="button" data-filter="new" aria-pressed="true">New products</button>
-          <button type="button" data-filter="best" aria-pressed="false">Best sellers</button>
-          <button type="button" data-filter="fresh" aria-pressed="false">Fresh bake</button>
+          <button class="selected" type="button" data-filter="all" aria-pressed="true">All products</button>
+          <button type="button" data-filter="whole" aria-pressed="false">Whole chicken</button>
+          <button type="button" data-filter="cuts" aria-pressed="false">Chicken cuts</button>
+          <button type="button" data-filter="ready" aria-pressed="false">Ready-to-cook</button>
         </div>
       </div>
 
       <div class="product-grid">
-        <article class="product-card" data-category="new best">
-          <img src="assets/images/oatmeal-cookies.svg" alt="Oatmeal raisin cookies">
+        <article class="product-card" data-category="whole">
+          <img src="assets/images/bf-young-tender.svg" alt="Young and Tender whole chicken product illustration">
           <div class="product-content">
-            <h3>Oatmeal raisin cookies</h3>
-            <p><span class="stars">★★★★★</span> 146 reviews</p>
-            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 3.84 USD</span></a>
+            <h3>Young & Tender</h3>
+            <p><span class="product-tag">Whole chicken</span> Everyday fresh choice</p>
+            <a href="#contact" class="order-row" data-order><b>•</b> View details <span>Family meal</span></a>
           </div>
         </article>
 
-        <article class="product-card" data-category="new fresh">
-          <img src="assets/images/soft-pretzel.svg" alt="Soft pretzel">
+        <article class="product-card" data-category="whole">
+          <img src="assets/images/bf-everyday-whole.svg" alt="Everyday Whole chicken product illustration">
           <div class="product-content">
-            <h3>Soft pretzels</h3>
-            <p><span class="stars">★★★★★</span> 235 reviews</p>
-            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 4.92 USD</span></a>
+            <h3>Everyday Whole</h3>
+            <p><span class="product-tag">Whole chicken</span> For everyday ulam</p>
+            <a href="#contact" class="order-row" data-order><b>•</b> View details <span>Family meal</span></a>
           </div>
         </article>
 
-        <article class="product-card" data-category="best fresh">
-          <img src="assets/images/baguette-bread.svg" alt="Soft baguette breads">
+        <article class="product-card" data-category="whole">
+          <img src="assets/images/bf-family-feast.svg" alt="Family Feast whole chicken product illustration">
           <div class="product-content">
-            <h3>Baguette soft breads</h3>
-            <p><span class="stars">★★★★★</span> 380 reviews</p>
-            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 14.96 USD</span></a>
+            <h3>Family Feast</h3>
+            <p><span class="product-tag">Whole chicken</span> Made for sharing</p>
+            <a href="#contact" class="order-row" data-order><b>•</b> View details <span>For sharing</span></a>
           </div>
         </article>
 
-        <article class="product-card" data-category="new best">
-          <img src="assets/images/chocolate-cake.svg" alt="Chocolate hazelnut cake">
+        <article class="product-card" data-category="cuts">
+          <img src="assets/images/bf-adobo-cuts.svg" alt="Adobo Cuts product illustration">
           <div class="product-content">
-            <h3>Chocolate hazelnut cannoli</h3>
-            <p><span class="stars">★★★★★</span> 120 reviews</p>
-            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 6.78 USD</span></a>
+            <h3>Adobo Cuts</h3>
+            <p><span class="product-tag">Chicken cuts</span> For classic adobo</p>
+            <a href="#contact" class="order-row" data-order><b>•</b> View details <span>Quick ulam</span></a>
           </div>
         </article>
 
-        <article class="product-card" data-category="best fresh">
-          <img src="assets/images/almond-croissant.svg" alt="Almond croissant">
+        <article class="product-card" data-category="cuts">
+          <img src="assets/images/bf-ziplock-cuts.svg" alt="Ziplock Cut Ups product illustration">
           <div class="product-content">
-            <h3>Almond croissant</h3>
-            <p><span class="stars">★★★★★</span> 436 reviews</p>
-            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 7.54 USD</span></a>
+            <h3>860g Ziplock Cut Ups</h3>
+            <p><span class="product-tag">Chicken cuts</span> Easy meal prep</p>
+            <a href="#contact" class="order-row" data-order><b>•</b> View details <span>Freezer ready</span></a>
           </div>
         </article>
 
-        <article class="product-card" data-category="fresh">
-          <img src="assets/images/croissant-waffle.svg" alt="Croissant au beurre">
+        <article class="product-card" data-category="cuts">
+          <img src="assets/images/bf-breast-fillet.svg" alt="Breast Fillet product illustration">
           <div class="product-content">
-            <h3>Croissant au beurre</h3>
-            <p><span class="stars">★★★★★</span> 175 reviews</p>
-            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 9.48 USD</span></a>
+            <h3>Breast Fillet</h3>
+            <p><span class="product-tag">Chicken cuts</span> Boneless option</p>
+            <a href="#contact" class="order-row" data-order><b>•</b> View details <span>Quick meals</span></a>
           </div>
         </article>
 
-        <article class="product-card" data-category="new">
-          <img src="assets/images/chiffon-pie.svg" alt="Chiffon pie">
+        <article class="product-card" data-category="cuts ready">
+          <img src="assets/images/bf-wings.svg" alt="Chicken Wings product illustration">
           <div class="product-content">
-            <h3>Chiffon pie</h3>
-            <p><span class="stars">★★★★★</span> 110 reviews</p>
-            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 18.47 USD</span></a>
+            <h3>Chicken Wings</h3>
+            <p><span class="product-tag">Chicken cuts</span> For flavorful recipes</p>
+            <a href="#contact" class="order-row" data-order><b>•</b> View details <span>Meal favorite</span></a>
           </div>
         </article>
 
-        <article class="product-card" data-category="best fresh">
-          <img src="assets/images/focaccia-bread.svg" alt="Focaccia bread">
+        <article class="product-card" data-category="ready">
+          <img src="assets/images/bf-chicken-tapa.svg" alt="Chicken Tapa product illustration">
           <div class="product-content">
-            <h3>Focaccia genovese</h3>
-            <p><span class="stars">★★★★★</span> 092 reviews</p>
-            <a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 8.32 USD</span></a>
+            <h3>Chicken Tapa</h3>
+            <p><span class="product-tag">Ready-to-cook</span> Breakfast or baon</p>
+            <a href="#contact" class="order-row" data-order><b>•</b> View details <span>Baon fave</span></a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- ABOUT / FEATURE -->
     <section class="section-shell split-feature" id="about">
       <div class="split-image">
-        <img src="assets/images/focaccia-bread.svg" alt="Freshly baked bread on a rack">
+        <img src="assets/images/bf-meal-ideas.svg" alt="Bounty Fresh quick meal ideas illustration">
       </div>
 
       <div class="split-copy">
-        <h2>The haven of heavenly bakes,<br>cakes, and confections</h2>
+        <p class="section-kicker">BUILT FOR EVERYDAY COOKING</p>
+        <h2>Easy meal choices for busy families</h2>
 
         <div class="benefit-list">
-          <div><span class="benefit-icon">✺</span><strong>Free shipping<br>worldwide</strong></div>
-          <div><span class="benefit-icon">♧</span><strong>Certified<br>organic</strong></div>
-          <div><span class="benefit-icon">▣</span><strong>Eco friendly<br>packaging</strong></div>
+          <div><span class="benefit-icon">◔</span><strong>For quick<br>weeknight meals</strong></div>
+          <div><span class="benefit-icon">◫</span><strong>For simple<br>baon ideas</strong></div>
+          <div><span class="benefit-icon">♥</span><strong>For family<br>sharing moments</strong></div>
         </div>
 
-        <p>Every batch is made with thoughtfully chosen ingredients, slow-fermented doughs, and a little extra joy. Fresh from our oven to your table.</p>
-        <a class="btn btn-yellow" href="#contact"><span>•</span> Contact us</a>
+        <p>Choose from whole chicken, convenient cuts, and ready-to-cook favorites for the meals your family enjoys.</p>
+        <a class="btn btn-red" href="#menu"><span>•</span> See meal ideas</a>
       </div>
     </section>
 
-    <!-- MARQUEE -->
-    <section class="ticker" aria-label="Bakery categories">
+    <section class="ticker" aria-label="Bounty Fresh product categories">
       <div class="ticker-track">
-        <span>Cake</span><b>✳</b><span>Brown bread</span><b>✳</b><span>Croissants</span><b>✳</b><span>Cookie</span><b>✳</b>
-        <span>Cake</span><b>✳</b><span>Brown bread</span><b>✳</b><span>Croissants</span><b>✳</b><span>Cookie</span><b>✳</b>
+        <span>Whole Chicken</span><b>✳</b><span>Adobo Cuts</span><b>✳</b><span>Chicken Wings</span><b>✳</b><span>Baon Faves</span><b>✳</b>
+        <span>Whole Chicken</span><b>✳</b><span>Adobo Cuts</span><b>✳</b><span>Chicken Wings</span><b>✳</b><span>Baon Faves</span><b>✳</b>
       </div>
     </section>
 
-    <!-- DAILY ITEMS + TESTIMONIALS -->
     <section class="section-shell daily-section" id="menu">
       <div class="section-heading">
-        <h2>Daily boost bakery items</h2>
-        <div class="round-arrows" aria-label="Carousel arrows">
-          <button type="button" data-scroll="prev" aria-label="Previous products">←</button>
-          <button type="button" data-scroll="next" aria-label="Next products">→</button>
+        <div>
+          <p class="section-kicker">WHAT TO COOK TODAY?</p>
+          <h2>Baon and meal favorites</h2>
+        </div>
+        <div class="round-arrows" aria-label="Meal ideas carousel arrows">
+          <button type="button" data-scroll="prev" aria-label="Previous meal ideas">←</button>
+          <button type="button" data-scroll="next" aria-label="Next meal ideas">→</button>
         </div>
       </div>
 
       <div class="daily-row" id="dailyItems">
         <article class="product-card compact">
-          <img src="assets/images/oatmeal-cookies.svg" alt="Oatmeal raisin cookies">
-          <div class="product-content"><h3>Oatmeal raisin cookies</h3><p><span class="stars">★★★★★</span> 146 reviews</p><a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 3.84 USD</span></a></div>
+          <img src="assets/images/bf-adobo-cuts.svg" alt="Chicken adobo meal idea">
+          <div class="product-content"><h3>Classic Chicken Adobo</h3><p><span class="product-tag">Meal idea</span> Simple, familiar, and pang-ulam.</p><a href="#contact" class="order-row" data-order><b>•</b> View idea <span>Adobo Cuts</span></a></div>
         </article>
         <article class="product-card compact">
-          <img src="assets/images/soft-pretzel.svg" alt="Soft pretzel">
-          <div class="product-content"><h3>Soft pretzels</h3><p><span class="stars">★★★★★</span> 235 reviews</p><a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 4.92 USD</span></a></div>
+          <img src="assets/images/bf-wings.svg" alt="Honey garlic wings meal idea">
+          <div class="product-content"><h3>Honey Garlic Wings</h3><p><span class="product-tag">Meal idea</span> A flavorful family favorite.</p><a href="#contact" class="order-row" data-order><b>•</b> View idea <span>Chicken Wings</span></a></div>
         </article>
         <article class="product-card compact">
-          <img src="assets/images/baguette-bread.svg" alt="Soft baguette breads">
-          <div class="product-content"><h3>Baguette soft breads</h3><p><span class="stars">★★★★★</span> 380 reviews</p><a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 14.96 USD</span></a></div>
+          <img src="assets/images/bf-breast-fillet.svg" alt="Chicken breast salad meal idea">
+          <div class="product-content"><h3>Chicken Breast Salad</h3><p><span class="product-tag">Meal idea</span> A light and easy option.</p><a href="#contact" class="order-row" data-order><b>•</b> View idea <span>Breast Fillet</span></a></div>
         </article>
         <article class="product-card compact">
-          <img src="assets/images/chocolate-cake.svg" alt="Chocolate hazelnut cake">
-          <div class="product-content"><h3>Chocolate hazelnut cannoli</h3><p><span class="stars">★★★★★</span> 120 reviews</p><a href="#contact" class="order-row" data-order="Bakery item"><b>•</b> Order now <span>$ 6.78 USD</span></a></div>
+          <img src="assets/images/bf-chicken-tapa.svg" alt="Chicken tapa rice bowl meal idea">
+          <div class="product-content"><h3>Chicken Tapa Rice Bowl</h3><p><span class="product-tag">Baon favorite</span> Easy breakfast or lunch.</p><a href="#contact" class="order-row" data-order><b>•</b> View idea <span>Chicken Tapa</span></a></div>
         </article>
       </div>
 
       <div class="testimonial-area">
-        <h2>What our fans say</h2>
+        <p class="section-kicker centered">MADE FOR EVERYDAY MOMENTS</p>
+        <h2>Why families choose Bounty Fresh</h2>
         <div class="testimonial-grid">
-          <article class="testimonial-card">
-            <p>“ Whether it’s the warm bread, or just the cozy aroma that fills the air, this bakery is always brighter ”</p>
-            <img src="assets/images/customer-daniel.svg" alt="Customer testimonial portrait">
-            <h3>Daniel Armstrong <small>Physician & athlete</small></h3>
+          <article class="testimonial-card bounty-card">
+            <p>Quick meal options that make everyday cooking feel more manageable.</p>
+            <div class="bounty-icon">◷</div>
+            <h3>For busy weekdays <small>Easy choices for your menu</small></h3>
           </article>
-          <article class="testimonial-card">
-            <p>“ The aroma hits you the moment you walk in. Every bite tastes like it was made just for me ”</p>
-            <img src="assets/images/customer-evelyn.svg" alt="Customer testimonial portrait">
-            <h3>Evelyn Hall <small>Diet instructor</small></h3>
+          <article class="testimonial-card bounty-card">
+            <p>From breakfast to lunch, there is always a chicken dish ready for the family table.</p>
+            <div class="bounty-icon">◫</div>
+            <h3>For favorite meals <small>Classic dishes made simple</small></h3>
           </article>
-          <article class="testimonial-card">
-            <p>“ They’re open whenever my cravings hit, and the quality of food is always top notch ”</p>
-            <img src="assets/images/customer-james.svg" alt="Customer testimonial portrait">
-            <h3>James Robinson <small>NYT bestselling author</small></h3>
+          <article class="testimonial-card bounty-card">
+            <p>Bring more variety to your baon lineup with familiar, easy-to-cook chicken cuts.</p>
+            <div class="bounty-icon">♥</div>
+            <h3>For every baon <small>Made for sharing and enjoying</small></h3>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- PROMO MOSAIC -->
     <section class="section-shell promo-section">
-      <h2>Why bakery’s items is so special to<br>our happy customer?</h2>
+      <p class="section-kicker centered">MORE IDEAS FOR YOUR FAMILY TABLE</p>
+      <h2>Fresh picks for every kind of meal</h2>
       <div class="promo-mosaic">
-        <a href="#contact" class="promo-card promo-tall">
-          <img src="assets/images/baguette-bread.svg" alt="Fresh baked bread">
-          <div><span>Fresh <em>baked</em></span><small>Order now</small></div>
+        <a href="#products" class="promo-card promo-tall">
+          <img src="assets/images/bf-everyday-whole.svg" alt="Everyday Whole Chicken product illustration">
+          <div><span>Everyday <em>fresh</em></span><small>Explore whole chicken options</small></div>
         </a>
 
-        <a href="#contact" class="promo-card promo-main">
-          <img src="assets/images/almond-croissant.svg" alt="Croissants on a plate">
-          <div><span>Buy one get one</span><strong>Free</strong></div>
+        <a href="#menu" class="promo-card promo-main">
+          <img src="assets/images/bf-chicken-tapa.svg" alt="Chicken Tapa meal idea illustration">
+          <div><span>Make baon time easy</span><strong>READY</strong><small>Quick meal ideas for busy days</small></div>
         </a>
 
         <div class="promo-right">
-          <a href="#contact" class="promo-card promo-small">
-            <img src="assets/images/croissant-waffle.svg" alt="Waffles and berries">
+          <a href="#products" class="promo-card promo-small">
+            <img src="assets/images/bf-wings.svg" alt="Chicken wings product illustration">
+            <div><span>Flavorful<br>favorites</span></div>
           </a>
-          <a href="#contact" class="promo-card promo-wide">
-            <img src="assets/images/cookies-chocolate.svg" alt="Cookies and chocolate">
-            <div><strong>25% off</strong><span>Test the real<br>baked items.</span><small>Order now</small></div>
+          <a href="#menu" class="promo-card promo-wide">
+            <img src="assets/images/bf-adobo-cuts.svg" alt="Adobo cuts meal idea illustration">
+            <div><strong>Baon Zone</strong><span>Chicken choices for<br>everyday family meals.</span><small>See meal ideas</small></div>
           </a>
         </div>
       </div>
 
       <div class="service-panel">
-        <h2>Fresh, fast & always<br>here for you</h2>
-        <div><span>♨</span><p>Crafted with love &<br>quality products</p></div>
-        <div><span>▣</span><p>Free shipping on all<br>orders above $50</p></div>
-        <div><span>⌾</span><p>Freshly baked, every<br>single day</p></div>
+        <h2>Fresh choices for<br>the family table</h2>
+        <div><span>◔</span><p>Whole chicken for<br>everyday meals</p></div>
+        <div><span>◫</span><p>Chicken cuts for<br>easy recipe options</p></div>
+        <div><span>♥</span><p>Baon favorites for<br>busy days</p></div>
       </div>
     </section>
 
-    <!-- LOGOS -->
     <section class="logos section-shell">
-      <p>Partnering with top<br>tier bakery stores</p>
-      <span>◐ Logoipsum</span>
-      <span>✿ Logoipsum</span>
-      <span>◓ Logoipsum</span>
-      <span>ϟ Logoipsum</span>
-      <span>⬡ Logoipsum</span>
+      <p>Perfect for your<br>everyday menu</p>
+      <span>◐ Whole Chicken</span>
+      <span>✿ Cut-Ups</span>
+      <span>◓ Breast Fillet</span>
+      <span>ϟ Chicken Wings</span>
+      <span>⬡ Baon Faves</span>
     </section>
   </main>
 
   <footer id="contact">
     <div class="footer-inner section-shell">
       <div class="newsletter">
-        <h2>Sunshine in your inbox</h2>
-        <p>Get 25% off your starter kit when you sign up</p>
+        <h2>Get fresh meal ideas</h2>
+        <p>Sign up for easy chicken recipe inspiration and family meal ideas.</p>
         <form class="email-form" id="newsletterForm">
-          <input type="email" placeholder="Enter your mail" aria-label="Email address">
+          <input type="email" placeholder="Enter your email" aria-label="Email address">
           <button aria-label="Subscribe">→</button>
         </form>
         <p id="newsletterMessage" class="form-message" aria-live="polite"></p>
-        <small>You can unsubscribe by using the unsubscribe link. Our Privacy Policy applies and sets out your rights.</small>
+        <small>Demo website content. Replace the contact details, policies, and links below with your approved Bounty Fresh information before publishing.</small>
       </div>
 
       <div class="footer-col">
         <h3>Contact us</h3>
-        <p>info@example.com</p>
-        <strong>+0123-456-9870</strong>
-        <p>27th Street, 15th Floor, New York, NY 1010</p>
+        <p>Add your official email address</p>
+        <strong>+63 XXX XXX XXXX</strong>
+        <p>Add your official office address</p>
         <a href="#">Get directions</a>
       </div>
 
       <div class="footer-col">
-        <h3>Useful link</h3>
+        <h3>Explore</h3>
         <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <a href="#about">About Bounty Fresh</a>
+        <a href="#products">Products</a>
+        <a href="#menu">Meal ideas</a>
         <a href="#contact">Contact</a>
-        <a href="#menu">Blog</a>
-        <a href="#products">Search results</a>
       </div>
 
       <div class="footer-col">
-        <h3>Our utilities</h3>
-        <a href="#">Style guide</a>
-        <a href="#">Changelog</a>
-        <a href="#">Licenses</a>
-        <a href="#">Protected page</a>
-        <a href="#">404</a>
+        <h3>Quick links</h3>
+        <a href="#">Store locator</a>
+        <a href="#">Promotions</a>
+        <a href="#">Recipe library</a>
+        <a href="#">FAQs</a>
+        <a href="#">Privacy policy</a>
       </div>
     </div>
   </footer>

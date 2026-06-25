@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-label="Basta Baon">
+      <defs>
+        <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#fff2d4"/>
+          <stop offset="100%" stop-color="#f7dca4"/>
+        </linearGradient>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="15" stdDeviation="13" flood-color="#5a251b" flood-opacity=".25"/>
+        </filter>
+      </defs>
+      <rect width="800" height="480" rx="34" fill="url(#bg)"/>
+      <circle cx="91" cy="80" r="12" fill="#fff" opacity=".32"/>
+      <circle cx="698" cy="89" r="18" fill="#fff" opacity=".28"/>
+      <circle cx="733" cy="400" r="10" fill="#fff" opacity=".3"/>
+      <rect x="74" y="50" width="652" height="380" rx="27" fill="#fffdf6" filter="url(#shadow)"/>
+      <rect x="74" y="50" width="652" height="89" rx="27" fill="#c8102e"/>
+      <rect x="74" y="110" width="652" height="29" fill="#c8102e"/>
+      <text x="400" y="91" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" fill="#fff">BOUNTY FRESH</text>
+      <text x="400" y="124" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#ffe278">BOUNTY FRESH</text>
+      <g filter="url(#shadow)">
+        <ellipse cx="400" cy="272" rx="134" ry="58" fill="#fff2cf"/>
+        <path d="M303 278 C283 232 308 195 352 202 C388 207 398 233 393 261 C424 233 472 238 489 273 C508 314 472 340 431 323 C402 351 356 334 350 302 C326 312 311 302 303 278Z" fill="#efab50"/>
+        <path d="M333 248 Q352 220 371 247" fill="none" stroke="#ffd98d" stroke-width="9" stroke-linecap="round"/>
+        <path d="M419 290 Q447 257 474 285" fill="none" stroke="#ffd98d" stroke-width="9" stroke-linecap="round"/>
+        </g>
+      <text x="400" y="374" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" fill="#51190f">Basta Baon</text>
+      <text x="400" y="404" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#7a4e36">Fresh chicken choices for every meal</text>
+    </svg>
