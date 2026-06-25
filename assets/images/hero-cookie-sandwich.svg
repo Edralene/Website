@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid slice">
+<title id="title">Chocolate cookie ice cream sandwich</title><desc id="desc">Illustrated bakery item</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#20110e"/><stop offset="1" stop-color="#6d3822"/></linearGradient>
+  <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#21100b" flood-opacity=".34"/></filter>
+  <radialGradient id="shine" cx="35%" cy="22%" r="80%"><stop stop-color="#fff7d6" stop-opacity=".55"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="900" height="650" rx="42" fill="url(#bg)"/>
+<rect width="900" height="650" rx="42" fill="url(#shine)"/>
+<g opacity=".16" fill="#fff4d5"><circle cx="90" cy="105" r="12"/><circle cx="195" cy="82" r="7"/><circle cx="755" cy="98" r="14"/><circle cx="825" cy="510" r="9"/><circle cx="108" cy="556" r="8"/></g>
+
+<g filter="url(#shadow)" transform="translate(105 60)">
+  <ellipse cx="345" cy="475" rx="265" ry="53" fill="#25100e" opacity=".38"/>
+  <g transform="rotate(-4 345 285)">
+    <rect x="113" y="305" width="470" height="105" rx="47" fill="#3e1c13"/>
+    <path d="M120 315 Q170 270 225 310 T335 305 T450 315 T585 305 L580 368 Q540 407 480 390 T360 404 T238 387 T130 386Z" fill="#f8e4be"/>
+    <path d="M132 350 Q190 326 230 356 T326 344 T415 358 T515 345 T577 361 L568 397 Q506 430 455 405 T345 420 T245 405 T144 414Z" fill="#fff4d7"/>
+    <path d="M130 390 Q220 415 306 397 T470 407 T575 391 L584 425 Q510 461 432 440 T275 455 T120 431Z" fill="#4a2115"/>
+    <path d="M165 278 Q220 205 345 210 Q478 206 545 278 L529 324 Q477 344 424 327 T315 337 T205 322Z" fill="#87502d"/>
+    <path d="M170 273 Q248 185 349 202 Q450 197 532 270" fill="none" stroke="#c8935e" stroke-width="24" stroke-linecap="round"/>
+    <g fill="#2e140e"><circle cx="238" cy="260" r="12"/><circle cx="316" cy="245" r="10"/><circle cx="392" cy="260" r="13"/><circle cx="466" cy="250" r="9"/><circle cx="279" cy="295" r="10"/><circle cx="438" cy="292" r="11"/></g>
+    <path d="M190 400 C166 454 130 452 118 488" fill="none" stroke="#542417" stroke-width="16" stroke-linecap="round"/>
+    <path d="M520 393 C570 436 603 425 620 467" fill="none" stroke="#542417" stroke-width="15" stroke-linecap="round"/>
+  </g>
+</g>
+</svg>

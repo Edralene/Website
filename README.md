@@ -1,13 +1,20 @@
 # Bisqueria Bakery Website
 
-## Files included
-- `index.html` — main webpage
-- `styles.css` — all responsive styling
-- `script.js` — product tabs, item search, slider controls, order toast, newsletter validation
-- `assets/images/` — local SVG bakery and customer image assets used by the website
-- `assets/reference/` — the uploaded visual references
+## Upload to GitHub Pages
+Upload the contents of this folder to the ROOT of your GitHub repository.
 
-## How to use
-Open `index.html` in your browser. No internet connection is needed for the website images or JavaScript.
+Your repository must look like this:
 
-To edit the content, change the text in `index.html`, the design in `styles.css`, and interactions in `script.js`.
+```
+index.html
+styles.css
+script.js
+assets/
+  images/
+    hero-cookie-sandwich.svg
+    oatmeal-cookies.svg
+    ...
+```
+
+Important: Upload the entire `assets` folder, including `assets/images`.
+Do not upload only `index.html`, `styles.css`, and `script.js`, or the images will not appear.

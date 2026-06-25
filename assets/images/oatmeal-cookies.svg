@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid slice">
+<title id="title">Oatmeal raisin cookies</title><desc id="desc">Illustrated bakery item</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a46a37"/><stop offset="1" stop-color="#e5c993"/></linearGradient>
+  <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#21100b" flood-opacity=".34"/></filter>
+  <radialGradient id="shine" cx="35%" cy="22%" r="80%"><stop stop-color="#fff7d6" stop-opacity=".55"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="900" height="650" rx="42" fill="url(#bg)"/>
+<rect width="900" height="650" rx="42" fill="url(#shine)"/>
+<g opacity=".16" fill="#fff4d5"><circle cx="90" cy="105" r="12"/><circle cx="195" cy="82" r="7"/><circle cx="755" cy="98" r="14"/><circle cx="825" cy="510" r="9"/><circle cx="108" cy="556" r="8"/></g>
+
+<g filter="url(#shadow)">
+ <ellipse cx="445" cy="490" rx="300" ry="54" fill="#2e160d" opacity=".36"/>
+ <g fill="#b9682b" stroke="#7c3d1f" stroke-width="12">
+  <circle cx="330" cy="300" r="165"/><circle cx="510" cy="355" r="150"/><circle cx="540" cy="225" r="130"/>
+ </g>
+ <g fill="#5a2816"><circle cx="260" cy="240" r="15"/><circle cx="350" cy="342" r="14"/><circle cx="439" cy="242" r="15"/><circle cx="535" cy="300" r="17"/><circle cx="585" cy="390" r="14"/><circle cx="460" cy="425" r="13"/><circle cx="285" cy="390" r="16"/></g>
+ <g stroke="#f7d48d" stroke-width="10" stroke-linecap="round"><path d="M245 318l34 13M322 180l26 24M408 335l27-15M545 178l-23 25M610 305l-31-14M378 445l-27-25"/></g>
+</g>
+</svg>

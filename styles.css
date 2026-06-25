@@ -17,7 +17,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--cream);
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
   line-height: 1.4;
 }
 a { color: inherit; text-decoration: none; }
@@ -40,7 +40,7 @@ img { display: block; width: 100%; object-fit: cover; }
   display: inline-flex;
   gap: 8px;
   align-items: center;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 24px;
   font-weight: 800;
   letter-spacing: -.055em;
@@ -91,7 +91,7 @@ img { display: block; width: 100%; object-fit: cover; }
 .hero h1 {
   margin: 0;
   max-width: 980px;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: clamp(56px, 9vw, 138px);
   font-weight: 800;
   line-height: .96;
@@ -107,7 +107,7 @@ img { display: block; width: 100%; object-fit: cover; }
 .hero-copy { padding-left: 2px; }
 .eyebrow {
   margin: 0 0 28px;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: clamp(32px, 3.35vw, 52px);
   font-weight: 800;
   line-height: 1.08;
@@ -148,7 +148,7 @@ img { display: block; width: 100%; object-fit: cover; }
 .service-panel h2,
 .newsletter h2 {
   margin: 0;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   line-height: 1.1;
   font-weight: 800;
   letter-spacing: -.055em;
@@ -235,7 +235,7 @@ img { display: block; width: 100%; object-fit: cover; }
   background: linear-gradient(180deg, #fffcee 0%, #fff070 90%, #fffcea 100%);
 }
 .ticker-track { display: flex; width: max-content; gap: 42px; align-items: center; animation: scroll 28s linear infinite; white-space: nowrap; }
-.ticker span { font-family: "Trebuchet MS", Arial, sans-serif; font-size: 35px; font-weight: 800; letter-spacing: -.055em; }
+.ticker span { font-family: "Manrope", sans-serif; font-size: 35px; font-weight: 800; letter-spacing: -.055em; }
 .ticker b { font-size: 34px; }
 @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
@@ -271,7 +271,7 @@ img { display: block; width: 100%; object-fit: cover; }
 .promo-card { position: relative; overflow: hidden; border-radius: var(--radius-xl); background: #3d2118; color: #fff; }
 .promo-card img { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .91; }
 .promo-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,7,3,.12), rgba(18,7,3,.56)); }
-.promo-card > div { position: absolute; z-index: 1; left: 27px; right: 27px; top: 28px; display: grid; gap: 7px; color: #fff; font-family: "Trebuchet MS", Arial, sans-serif; font-weight: 800; }
+.promo-card > div { position: absolute; z-index: 1; left: 27px; right: 27px; top: 28px; display: grid; gap: 7px; color: #fff; font-family: "Manrope", sans-serif; font-weight: 800; }
 .promo-card small { font-family: "DM Sans", sans-serif; font-weight: 600; }
 .promo-tall { height: 380px; }
 .promo-tall > div { font-size: 30px; }
@@ -399,16 +399,3 @@ footer { background: var(--panel-2); }
   .promo-small, .promo-wide { height: 185px; }
   .footer-inner { grid-template-columns: 1fr; }
 }
-
-
-/* JavaScript states */
-.product-card.is-hidden { display: none; }
-.form-message { min-height: 18px; margin: 10px 0 0; color: #6f5526; font-size: 12px; font-weight: 700; }
-.toast-message {
-  position: fixed; z-index: 99; right: 22px; bottom: 22px; max-width: 290px;
-  padding: 14px 18px; border-radius: 15px; background: var(--ink); color: #fffdf8;
-  box-shadow: 0 12px 36px rgba(36, 16, 13, .24); font-size: 13px; font-weight: 700;
-  opacity: 0; transform: translateY(14px); pointer-events: none; transition: .24s ease;
-}
-.toast-message.show { opacity: 1; transform: translateY(0); }
-@media (max-width: 720px) { .toast-message { left: 16px; right: 16px; bottom: 16px; max-width: none; } }

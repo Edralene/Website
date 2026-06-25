@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid slice">
+<title id="title">Baguette soft bread</title><desc id="desc">Illustrated bakery item</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#91622f"/><stop offset="1" stop-color="#f4cd8d"/></linearGradient>
+  <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#21100b" flood-opacity=".34"/></filter>
+  <radialGradient id="shine" cx="35%" cy="22%" r="80%"><stop stop-color="#fff7d6" stop-opacity=".55"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="900" height="650" rx="42" fill="url(#bg)"/>
+<rect width="900" height="650" rx="42" fill="url(#shine)"/>
+<g opacity=".16" fill="#fff4d5"><circle cx="90" cy="105" r="12"/><circle cx="195" cy="82" r="7"/><circle cx="755" cy="98" r="14"/><circle cx="825" cy="510" r="9"/><circle cx="108" cy="556" r="8"/></g>
+
+<g filter="url(#shadow)" transform="rotate(-12 450 330)">
+ <ellipse cx="450" cy="474" rx="300" ry="45" fill="#3a1f13" opacity=".28"/>
+ <rect x="144" y="214" width="610" height="210" rx="105" fill="#d98a39"/>
+ <path d="M252 231 Q278 316 232 400M402 220 Q429 313 384 413M551 219 Q581 314 535 415M677 247 Q697 318 660 384" fill="none" stroke="#ffe2a8" stroke-width="30" stroke-linecap="round"/>
+ <path d="M157 277 Q450 126 738 292" fill="none" stroke="#f3b45f" stroke-width="15" opacity=".8"/>
+</g>
+</svg>

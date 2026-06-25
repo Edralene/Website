@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid slice">
+<title id="title">Chiffon pie</title><desc id="desc">Illustrated bakery item</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a75e32"/><stop offset="1" stop-color="#f5d6a0"/></linearGradient>
+  <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#21100b" flood-opacity=".34"/></filter>
+  <radialGradient id="shine" cx="35%" cy="22%" r="80%"><stop stop-color="#fff7d6" stop-opacity=".55"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="900" height="650" rx="42" fill="url(#bg)"/>
+<rect width="900" height="650" rx="42" fill="url(#shine)"/>
+<g opacity=".16" fill="#fff4d5"><circle cx="90" cy="105" r="12"/><circle cx="195" cy="82" r="7"/><circle cx="755" cy="98" r="14"/><circle cx="825" cy="510" r="9"/><circle cx="108" cy="556" r="8"/></g>
+
+<g filter="url(#shadow)">
+ <ellipse cx="454" cy="500" rx="280" ry="42" fill="#3b2118" opacity=".33"/>
+ <path d="M195 378 Q452 158 705 379 Q624 492 450 502 Q275 492 195 378Z" fill="#d69546"/>
+ <path d="M229 365 Q451 202 673 365 Q604 430 451 448 Q301 431 229 365Z" fill="#efbc69"/>
+ <path d="M270 347 Q447 245 628 347 Q573 386 451 395 Q330 386 270 347Z" fill="#9d4728"/>
+ <path d="M285 335 Q445 255 615 336" fill="none" stroke="#fff0c9" stroke-width="23" stroke-linecap="round"/>
+</g>
+</svg>

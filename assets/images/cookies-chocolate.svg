@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid slice">
+<title id="title">Cookies and chocolate</title><desc id="desc">Illustrated bakery item</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4b2518"/><stop offset="1" stop-color="#c87f3c"/></linearGradient>
+  <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#21100b" flood-opacity=".34"/></filter>
+  <radialGradient id="shine" cx="35%" cy="22%" r="80%"><stop stop-color="#fff7d6" stop-opacity=".55"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="900" height="650" rx="42" fill="url(#bg)"/>
+<rect width="900" height="650" rx="42" fill="url(#shine)"/>
+<g opacity=".16" fill="#fff4d5"><circle cx="90" cy="105" r="12"/><circle cx="195" cy="82" r="7"/><circle cx="755" cy="98" r="14"/><circle cx="825" cy="510" r="9"/><circle cx="108" cy="556" r="8"/></g>
+
+<g filter="url(#shadow)">
+ <rect x="142" y="235" width="250" height="205" rx="24" fill="#5a2919" transform="rotate(-9 142 235)"/>
+ <path d="M160 284H372M150 344H385" stroke="#9e5730" stroke-width="12"/>
+ <circle cx="584" cy="355" r="138" fill="#bd6d30"/>
+ <g fill="#582717"><circle cx="520" cy="312" r="15"/><circle cx="610" cy="293" r="14"/><circle cx="646" cy="388" r="15"/><circle cx="568" cy="428" r="13"/></g>
+ <path d="M488 240 Q593 140 697 242" fill="none" stroke="#f4cf8a" stroke-width="22"/>
+</g>
+</svg>

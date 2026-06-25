@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid slice">
+<title id="title">Croissant au beurre</title><desc id="desc">Illustrated bakery item</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#33221b"/><stop offset="1" stop-color="#bd7b2f"/></linearGradient>
+  <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#21100b" flood-opacity=".34"/></filter>
+  <radialGradient id="shine" cx="35%" cy="22%" r="80%"><stop stop-color="#fff7d6" stop-opacity=".55"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="900" height="650" rx="42" fill="url(#bg)"/>
+<rect width="900" height="650" rx="42" fill="url(#shine)"/>
+<g opacity=".16" fill="#fff4d5"><circle cx="90" cy="105" r="12"/><circle cx="195" cy="82" r="7"/><circle cx="755" cy="98" r="14"/><circle cx="825" cy="510" r="9"/><circle cx="108" cy="556" r="8"/></g>
+
+<g filter="url(#shadow)">
+ <ellipse cx="443" cy="500" rx="294" ry="45" fill="#1e110d" opacity=".35"/>
+ <rect x="210" y="190" width="480" height="315" rx="28" fill="#ba762d"/>
+ <g stroke="#f4c36d" stroke-width="18"><path d="M275 198V500M360 198V500M445 198V500M530 198V500M615 198V500"/><path d="M216 250H684M216 330H684M216 410H684"/></g>
+ <path d="M300 148 Q430 60 570 146 Q536 232 445 232 Q354 232 300 148Z" fill="#d98a39"/>
+ <path d="M323 152 Q390 95 445 166 Q500 94 555 152" fill="none" stroke="#f4c36d" stroke-width="22" stroke-linecap="round"/>
+ <g fill="#5d2b15"><circle cx="304" cy="235" r="10"/><circle cx="422" cy="316" r="10"/><circle cx="560" cy="394" r="10"/><circle cx="615" cy="267" r="10"/></g>
+</g>
+</svg>

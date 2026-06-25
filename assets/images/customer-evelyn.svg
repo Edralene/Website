@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid slice">
+<title id="title">Portrait illustration of Evelyn</title><desc id="desc">Illustrated bakery item</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#70513d"/><stop offset="1" stop-color="#c9a181"/></linearGradient>
+  <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#21100b" flood-opacity=".34"/></filter>
+  <radialGradient id="shine" cx="35%" cy="22%" r="80%"><stop stop-color="#fff7d6" stop-opacity=".55"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="900" height="650" rx="42" fill="url(#bg)"/>
+<rect width="900" height="650" rx="42" fill="url(#shine)"/>
+<g opacity=".16" fill="#fff4d5"><circle cx="90" cy="105" r="12"/><circle cx="195" cy="82" r="7"/><circle cx="755" cy="98" r="14"/><circle cx="825" cy="510" r="9"/><circle cx="108" cy="556" r="8"/></g>
+<g filter="url(#shadow)"><rect x="150" y="92" width="600" height="470" rx="38" fill="#efe1cb" opacity=".22"/>
+      <ellipse cx="450" cy="575" rx="225" ry="85" fill="#6d726c"/>
+      <path d="M340 498 Q357 400 450 400 Q543 400 560 498 L590 574H310Z" fill="#6d726c"/>
+      <rect x="408" y="364" width="84" height="104" rx="36" fill="#efbb8c"/>
+      <ellipse cx="450" cy="286" rx="119" ry="146" fill="#efbb8c"/>
+      <path d="M332 280 Q334 119 451 127 Q580 141 568 281 Q531 205 452 211 Q372 210 332 280Z" fill="#7d5534"/>
+      <path d="M356 218 Q330 270 348 329" fill="none" stroke="#7d5534" stroke-width="36" stroke-linecap="round"/>
+      <path d="M543 213 Q574 272 553 331" fill="none" stroke="#7d5534" stroke-width="33" stroke-linecap="round"/>
+      <circle cx="408" cy="283" r="12" fill="#2e1b16"/><circle cx="494" cy="283" r="12" fill="#2e1b16"/>
+      <path d="M421 346 Q450 366 480 346" fill="none" stroke="#9f554a" stroke-width="11" stroke-linecap="round"/>
+      <g fill="none" stroke="#2a2420" stroke-width="10"><circle cx="408" cy="283" r="43"/><circle cx="494" cy="283" r="43"/><path d="M451 282H452"/></g>
+    </g>
+</svg>

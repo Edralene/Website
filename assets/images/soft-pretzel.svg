@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid slice">
+<title id="title">Soft pretzel</title><desc id="desc">Illustrated bakery item</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c38752"/><stop offset="1" stop-color="#f7dec0"/></linearGradient>
+  <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#21100b" flood-opacity=".34"/></filter>
+  <radialGradient id="shine" cx="35%" cy="22%" r="80%"><stop stop-color="#fff7d6" stop-opacity=".55"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="900" height="650" rx="42" fill="url(#bg)"/>
+<rect width="900" height="650" rx="42" fill="url(#shine)"/>
+<g opacity=".16" fill="#fff4d5"><circle cx="90" cy="105" r="12"/><circle cx="195" cy="82" r="7"/><circle cx="755" cy="98" r="14"/><circle cx="825" cy="510" r="9"/><circle cx="108" cy="556" r="8"/></g>
+
+<g filter="url(#shadow)" fill="none" stroke="#b56528" stroke-width="74" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M245 165 C160 285 250 470 445 430 C615 395 684 205 540 153 C450 121 430 260 350 322 C266 386 170 295 245 165Z"/>
+ <path d="M263 455 C350 372 425 318 588 460"/>
+</g>
+<g fill="#f9e7bc"><circle cx="285" cy="212" r="10"/><circle cx="346" cy="381" r="9"/><circle cx="457" cy="307" r="12"/><circle cx="543" cy="218" r="9"/><circle cx="569" cy="406" r="11"/></g>
+</svg>
